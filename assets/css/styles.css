@@ -286,6 +286,8 @@ header{
     height: 30rem;
     position: relative;
     bottom: 22rem;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 .promotions__container{
     place-items: center;
@@ -367,6 +369,8 @@ header{
 .eagle{
     padding-top: 0;
     margin-top: -8rem;
+    max-width: 120rem;
+    margin: -5rem auto 0;
 }
 .eagle__container{
     
@@ -436,6 +440,9 @@ header{
     text-align: left;
 }
 /* =========Felicity======= */
+.felicity{
+    margin: 0 auto;
+}
 .cover-felicity{
     width: 100%;
     height: 80rem;
@@ -542,8 +549,12 @@ header{
  opacity: 1;
 }
 /* ==========simple auto========== */
+
 .eagle__img-title{
     width: 18rem;
+}
+.simple{
+    margin-top: -2rem;
 }
 .simple__container{
     max-width: 78rem;
@@ -958,6 +969,112 @@ header{
         max-width: 100%;
         padding: 4rem;
     }
+    .menu nav{
+        position: fixed;
+        top: 0;
+        right: -25rem;
+        background: white;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+        box-shadow: var(--shadown);
+    }
+    .btn__close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 5rem;
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+        margin: 10rem auto 0;
+        transition: all 300ms;
+        position: relative;
+        bottom: 51rem;
+        left: 8rem;
+    }
+    .btn__close:hover{
+        background: rgba(255, 0, 0, 0.315);
+    }
+    .menu ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 3rem;
+    }
+
+    .menu ul li{
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    .menu ul li a{
+        color: var(--first-color);
+    }
+    .logo img{
+        width: 13rem;
+    }
+    #selected{
+        background: none;
+        padding: 0px;
+        border-radius: none;
+        color: #F6615D;
+    }
+
+    .menu nav .logo-nav{
+        display: block;
+        width: 15rem;
+        margin-top: 5rem;
+    }
+    #backMenu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        display: none;
+    }
+
+    .menu #btnMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        height: 5rem;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 2.4rem;
+        border-radius: 5rem;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+    .menu #btnMenu:hover{
+        background: rgba(255, 0, 0, 0.315);
+    }
+    .container__cover{
+        height: 70rem;
+    }
+    .cover{
+        height: 80%;
+    }
+    .container__cover .text{
+        padding-bottom: 4rem;
+    }
+    .container__cover .svg img{
+        width: 79rem;
+        margin-top: 9rem;
+    }
+    .btn-header{
+        top: 6rem;
+    }
+    /* Promotions */
+    .promotions{
+        max-width: 100rem;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width:720px) {
     .menu nav{
@@ -990,7 +1107,7 @@ header{
     .menu ul{
         flex-direction: column;
         justify-content: center;
-        margin-top: 7rem;
+        margin-top: 4rem;
     }
 
     .menu ul li{
@@ -1048,6 +1165,9 @@ header{
         grid-template-rows: repeat(3, 1fr);
         height: 100vh;
     }
+    .container__cover .svg img{
+        margin-top: -5rem;
+    }
     .container__cover .text h1{
         margin-top: 6rem;
         padding-top: 2rem;
@@ -1066,6 +1186,7 @@ header{
     }
     .btn-header{
         padding: 1rem 4rem;
+        top: 3rem;
     }
     .svg{
         margin: 6rem auto 9rem;
