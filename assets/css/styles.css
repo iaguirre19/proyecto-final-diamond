@@ -7,6 +7,7 @@
     --quinto-color: #EDF2F4;
     --text-title-color:rgba(63,63,63,255);
     --text-subtitle-color: rgba(183,183,183,255);
+    --privacyColor:rgb(97, 96, 96);
     --blanco:#fff;
     --separacion:5rem;
     --padding-principal: 2rem;
@@ -27,6 +28,8 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
     --text-title-mobile:2.5rem;
+    --text-privacy:1.3rem;
+    --text-titulo-privacy: 1.8rem;
 
      --font-medium: 500;
     --font-semi-bold: 600;
@@ -902,7 +905,47 @@ header{
     padding-left: 2rem;
     font-size: 1.7rem;
 }
-
+/* =======================Privacy policy Agreement======================== */
+.privacy__date{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.privacy h1{
+    color: var(--cuarto-color);
+    text-align: center;
+    font-size: calc(var(--h1-text-font) - .5rem);
+    padding: 4rem 0;
+}
+.privacy__description-sub-date{
+    color: var(--privacyColor);
+    font-size: var(--text-privacy);
+    padding: 1rem 0;
+}
+.privacy__data p{
+    color: var(--privacyColor);
+    font-size: var(--text-privacy);
+}
+.privacy__data h3{
+    color: var(--first-color);
+    font-size: var(--text-titulo-privacy);
+}
+.privacy__data h4{
+    color: #4e4b4b;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+.privacy__data ol{
+    padding-top: 1rem;
+}
+.privacy__data ol li{
+    list-style-position: inside;
+    color: var(--privacyColor);
+    font-size: var(--text-privacy);
+    margin-top: .5rem;
+}
+.span-email{
+    font-weight: bold;
+}
 
 
 
@@ -1062,13 +1105,6 @@ header{
         margin-bottom: -10rem;
         display: flex;
         justify-content: center;
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent; */
-        /* position: relative; */
     }
     .imagen-box{
         display: none;
