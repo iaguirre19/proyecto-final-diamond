@@ -1269,7 +1269,7 @@ header{
         font-size: 3rem;
     }
 }
-@media screen and  (max-width: 374px) {
+@media screen and  (max-width: 384px) {
     .promotions__text-coupon{
         padding-left: 2rem;
         border-left:none;
@@ -1285,5 +1285,17 @@ header{
     }
     .text-body{
         overflow-x: auto;
+    }
+    .find{
+        margin-top: -16rem;
+    }
+    .find h2{
+        margin-bottom: 15rem;
+    }
+    .card-find{
+        width: 300px;
+    }
+    .card-button-2{
+        transform: translate(-50%, -105%);
     }
 }
