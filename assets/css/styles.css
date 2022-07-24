@@ -222,6 +222,7 @@ header{
     background-image: url(../img/blob-haikei\ \(2\).svg);
     background-position: right;
     background-repeat: no-repeat;
+    margin-bottom: 20rem;
 }
 .cover{
     max-width: 120rem;
@@ -281,8 +282,55 @@ header{
         transform: translateY(15px);
     }
 }
+.slider__container{
+    max-width: 810px;
+    margin: -12rem auto 0;
+    width: 800px;
+    height:220px;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.mobile-version{
+    display: none;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+.promotions-mobile{
+    display: none;
+}
+.promotions__mobile-title{
+    display: none;
+}
 /* ==========Promotions============ */
-.promotions{
+/* .promotions{
     height: 30rem;
     position: relative;
     bottom: 22rem;
@@ -323,7 +371,6 @@ header{
 .imagen-box{
     position: absolute;
     width: 38rem;
-    /* right: 6rem; */
     margin-left: 10rem;
     bottom: 1.7rem;
 }
@@ -364,13 +411,13 @@ header{
     border-top-left-radius: 3rem;
     border-bottom-left-radius: 3rem;
     box-shadow: var(--shadown);
-}
+} */
 /* ==========Eagle first======== */
 .eagle{
     padding-top: 0;
     margin-top: -8rem;
     max-width: 120rem;
-    margin: -5rem auto 0;
+    margin: 5rem auto 0;
 }
 .eagle__container{
     
@@ -959,7 +1006,7 @@ header{
 }
 
 
-
+/* =========================================Media Querys===================================== */
 
 
 
@@ -1071,10 +1118,10 @@ header{
         top: 6rem;
     }
     /* Promotions */
-    .promotions{
+    /* .promotions{
         max-width: 100rem;
         margin: 0 auto;
-    }
+    } */
 }
 @media screen and (max-width:720px) {
     .menu nav{
@@ -1164,6 +1211,7 @@ header{
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         height: 100vh;
+        margin-top: 2rem;
     }
     .container__cover .svg img{
         margin-top: -5rem;
@@ -1189,13 +1237,10 @@ header{
         top: 3rem;
     }
     .svg{
-        margin: 6rem auto 9rem;
-    }
-    .eagle{
-        margin-top: 15rem;
+        margin: 4rem auto 9rem;
     }
     /* Promotions mq */
-    .promotions{
+    /* .promotions{
         height: 80vh;
         margin: 5rem auto;
         position: relative;
@@ -1270,8 +1315,11 @@ header{
         position: relative;
         top: 2rem;
         display: none;
+    } */
+    /* ==================================eagle first==================================== */
+    .eagle{
+        margin-top: 13rem;
     }
-    /* Felicity */
     .eagle__content{
         display: flex;
         flex-direction: column;
@@ -1408,6 +1456,9 @@ header{
         width: 40rem;
         margin-top: 0;
     }
+    .footer__link{
+        font-size: 1.5rem;
+    }
 
 
 
@@ -1454,5 +1505,35 @@ header{
     }
     .card-button-2{
         transform: translate(-50%, -105%);
+    }
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .promotions-mobile{
+        display: block;
+    }
+    .container__cover{
+        margin-bottom: 0;
+    }
+    .desktop-promotions{
+        display: none;
+    }
+    .slider__container{
+        height: 680px;
+        max-width: 380px;
+        margin-top: 5rem;
+    }
+    .slider .desk-version{
+        display: none;
+    }
+    .mobile-version{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .promotions__mobile-title{
+        text-align: center;
+        color: var(--first-color);
+        font-size: var(--h1-text-font);
+        display: block;
     }
 }
