@@ -25,7 +25,16 @@ backgroundMenu = document.getElementById("backMenu");
 
 document.getElementById('backMenu').addEventListener('click', ocultarMenu);
 document.getElementById("btnClose").addEventListener('click', ocultarMenuSegundo);
-
+document.getElementById("eagleNav").addEventListener('click',  ocultarMenuTercero);
+document
+  .getElementById("felicityNav")
+  .addEventListener("click", ocultarMenuQuinto);
+  document
+    .getElementById("simpleAutoNav")
+    .addEventListener("click", ocultarMenuCuarto);
+  document
+    .getElementById("diamondHome")
+    .addEventListener("click", ocultarMenuSexto);
 
 function mostrarMenu() {
   nav.style.right = "0px";
@@ -42,19 +51,19 @@ function ocultarMenuSegundo(){
   backgroundMenu.style.display = "none";
 }
 
-
-// ==============================Scroll mapa =============================
-// const links = document.querySelectorAll(".page-header ul a");
-
-// for (const link of links) {
-//   link.addEventListener("click", clickHandler);
-// }
-
-// function clickHandler(e) {
-//   e.preventDefault();
-//   const href = this.getAttribute("href");
-
-//   document.querySelector(href).scrollIntoView({
-//     behavior: "smooth",
-//   });
-// }
+function ocultarMenuTercero(){
+  nav.style.right = "-250px";
+  backgroundMenu.style.display = "none";
+}
+function ocultarMenuCuarto() {
+  nav.style.right = "-250px";
+  backgroundMenu.style.display = "none";
+}
+function ocultarMenuQuinto() {
+  nav.style.right = "-250px";
+  backgroundMenu.style.display = "none";
+}
+function ocultarMenuSexto() {
+  nav.style.right = "-250px";
+  backgroundMenu.style.display = "none";
+}
